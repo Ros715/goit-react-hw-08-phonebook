@@ -36,20 +36,6 @@ function Register({ onSubmit }) {
       }}
     >
       <label style={styles.label}>
-        Email
-        <input
-          type="email"
-          name="email"
-          value={email}
-          required
-          onChange={(e) => {
-            //console.log("name", e.currentTarget.value);
-            setEmail(e.currentTarget.value);
-          }}
-        />
-      </label>
-
-      <label style={styles.label}>
         Name
         <input
           type="text"
@@ -59,6 +45,20 @@ function Register({ onSubmit }) {
           onChange={(e) => {
             //console.log("name", e.currentTarget.value);
             setName(e.currentTarget.value);
+          }}
+        />
+      </label>
+
+      <label style={styles.label}>
+        Email
+        <input
+          type="email"
+          name="email"
+          value={email}
+          required
+          onChange={(e) => {
+            //console.log("name", e.currentTarget.value);
+            setEmail(e.currentTarget.value);
           }}
         />
       </label>
