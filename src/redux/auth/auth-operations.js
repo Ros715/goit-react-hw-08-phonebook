@@ -14,9 +14,9 @@ const token = {
 
 const register = createAsyncThunk("auth/register", async (credentials) => {
   try {
-    console.log("credentials=", credentials);
+    //console.log("credentials=", credentials);
     const { data } = await axios.post("/users/signup", credentials);
-    console.log("data=", data);
+    //console.log("data=", data);
     token.set(data.token);
     return data;
   } catch (error) {
@@ -26,9 +26,9 @@ const register = createAsyncThunk("auth/register", async (credentials) => {
 
 const logIn = createAsyncThunk("auth/login", async (credentials) => {
   try {
-    console.log("credentials=", credentials);
+    //console.log("credentials=", credentials);
     const { data } = await axios.post("/users/login", credentials);
-    console.log("data=", data);
+    //console.log("data=", data);
     token.set(data.token);
     return data;
   } catch (error) {
@@ -50,7 +50,7 @@ const fetchCurrentUser = createAsyncThunk(
     const persistedToken = state.auth.token;
 
     if (persistedToken === null) {
-      console.log("No token found, escape from fetchCurrentUser");
+      //console.log("No token found, escape from fetchCurrentUser");
       return thunkAPI.rejectWithValue();
     }
 

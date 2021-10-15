@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Switch /*, Route*/ } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Container from "./components/Container/Container";
 import AppBar from "./components/AppBar";
 import HomeView from "./views/HomeView";
@@ -23,7 +23,7 @@ const App = () => {
       <AppBar />
 
       <Switch>
-        <PublicRoute component={HomeView} exact path="/" />
+        <Route component={HomeView} exact path="/" />
         <PublicRoute component={RegisterView} path="/register" />
         <PublicRoute component={LoginView} path="/login" />
         <PrivateRoute component={ContactsView} path="/contacts" />

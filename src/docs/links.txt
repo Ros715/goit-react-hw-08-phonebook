@@ -1,3 +1,7 @@
 https://github.com/Ros715/goit-react-hw-08-phonebook
 
 https://ros715.github.io/goit-react-hw-08-phonebook/
+
+
+credentials= {name: 'mnbvc', email: 'mnbvc@mail.com', password: '1234asdf'}
+auth-operations.js:19 data= {user: {…}, token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M…1MjJ9.QHJQcfMA4rIuLBbmvS0LCPyPyRd4rSbVgcs5JXgeZzA'}
